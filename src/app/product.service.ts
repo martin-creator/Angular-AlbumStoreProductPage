@@ -1,6 +1,7 @@
 import { Injectable } from '@angular/core';
 import {Http, Response} from '@angular/http';
-import {map} from 'rxjs/operators';;
+import {map} from 'rxjs/operators';
+//import rxjs/add/operator/map;
 //import { pipe } from 'rxjs';
 //import { map } from 'rxjs/operators';
 
@@ -13,7 +14,7 @@ export class ProductService {
 
   getAlbum(id:number){
 
-    return this._http.get(this._albumUrl).pipe(map((response) => response.json()))
+    return this._http.get(this._albumUrl).pipe(map((response) =>response.json()))
     ;
 
 
